@@ -2,7 +2,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const newsApi = createApi({
   reducerPath: "news",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000/api/v1" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://news-with-mern.vercel.app//api/v1",
+  }),
   endpoints: (builder) => ({
     getAllNews: builder.query({
       query: () => ({
