@@ -14,7 +14,7 @@ type formUserLogin = {
 
 export const postUser = async (data: dataType) => {
   const { data: user } = await axios.post(
-    "http://localhost:3000/api/v1/users/signup",
+    "https://news-with-mern.vercel.app/api/v1/users/signup",
     data,
     {
       withCredentials: true,
@@ -25,7 +25,7 @@ export const postUser = async (data: dataType) => {
 
 export const loginUser = async (data: formUserLogin) => {
   const { data: user } = await axios.post(
-    "http://localhost:3000/api/v1/users/login",
+    "https://news-with-mern.vercel.app/api/v1/users/login",
     data,
     {
       withCredentials: true,
@@ -35,7 +35,7 @@ export const loginUser = async (data: formUserLogin) => {
 };
 
 export const logoutUser = async () => {
-  await axios.get("http://localhost:3000/api/v1/users/logout", {
+  await axios.get("https://news-with-mern.vercel.app/api/v1/users/logout", {
     withCredentials: true,
   });
 };

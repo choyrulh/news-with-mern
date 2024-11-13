@@ -11,12 +11,15 @@ export const getAllUser = async () => {
   }
 
   try {
-    const response = await axios.get("http://localhost:3000/api/v1/users", {
-      headers: {
-        Authorization: `Bearer ${jwtToken}`,
-      },
-      withCredentials: true,
-    });
+    const response = await axios.get(
+      "https://news-with-mern.vercel.app/api/v1/users",
+      {
+        headers: {
+          Authorization: `Bearer ${jwtToken}`,
+        },
+        withCredentials: true,
+      }
+    );
     console.log(response.data);
     return response.data;
   } catch (error) {
