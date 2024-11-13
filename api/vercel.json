@@ -1,4 +1,6 @@
 {
-  "builds": [{ "src": "*.js", "use": "@vercel/node" }],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "version": 2,
+  "name": "my-mern-news",
+  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+  "rewrites": [{ "source": "/(.*)", "destination": "/server.js" }]
 }
