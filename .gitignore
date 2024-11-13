@@ -1,0 +1,21 @@
+
+/api/node_modules
+/client/node_modules
+
+# Jangan track file-file konfigurasi lokal
+config.env
+
+# Jangan track file-file cache atau log
+npm-cache
+*.log
+
+# Jangan track file-file yang spesifik ke sistem operasi
+.DS_Store
+
+# Jangan track file-file yang dihasilkan oleh editor code
+*.suo
+*.ntvs*
+.vscode/
+
+# Jangan track file-file yang dihasilkan oleh dependensi
+/node_modules
